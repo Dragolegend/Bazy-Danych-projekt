@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>--🐉🐉🐉--</title>
+    <link rel="stylesheet" href="./css/items.css">
+</head>
+
+
+<body>
+    <div id="character_list">
+        <button id="add_character">Utwórz postać</button>
+    </div>
+
+    <div id="creation_box" class="hidden">
+       <br>
+       <br>
+        <input type="text" placeholder="Imię" id="name">
+        <input type="text" placeholder="Rasa" id="race">
+        <input type="number" placeholder="Poziom" id="level">
+        <br>
+        <br>
+        <button id="confirm">Potwierdź</button>
+        <button id="cancel">Anuluj</button>
+    </div>
+
+    <div id="character_box" class="hidden">
+        <button id="change">Zmień postać</button>
+        <br>
+        <br>
+        <h1 id="character_name"></h1>
+        <p id="character_race"></p>
+        <p id="character_level"></p>
+        <p>Wyposażone przedmioty:</p>
+        <div id="equipped_box"></div>
+        <br>
+        <br>
+        
+        <div id="search_box">
+            <div>
+                <label for="nameInput">Nazwa przedmiotu:</label>
+                <input type="text" id="nameInput" oninput="characters.filter_table()">
+            </div>
+
+            <div>
+                <label for="weightInput">Waga:</label>
+                <input type="number" id="weightInput" oninput="characters.filter_table()">
+            </div>
+
+            <div>
+                <label for="costInput">Koszt:</label>
+                <input type="number" id="costInput" oninput="characters.filter_table()">
+            </div>
+
+            <div>
+                <label for="typeInput">Typ:</label>
+                <input type="text" id="typeInput" oninput="characters.filter_table()">
+            </div>
+            <div>
+                <label for="typeInput">Ilość:</label>
+                <input type="number" id="countInput" oninput="characters.filter_table()">
+            </div>
+        </div>
+    </div>
+
+    <script src="character_class.js"></script>
+    <script src="character.js"></script>
+</body>
+
+</html>

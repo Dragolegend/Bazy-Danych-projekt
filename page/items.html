@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>--🐉🐉🐉--</title>
+    <link rel="stylesheet" href="./css/items.css">
+</head>
+
+
+<body>
+<div id="search_box">
+
+<div>
+  <label for="nameInput">Nazwa przedmiotu:</label>
+  <input type="text" id="nameInput" oninput="items_table.filter_table()">
+</div>
+
+<div>
+  <label for="weightInput">Waga:</label>
+  <input type="number" id="weightInput" oninput="items_table.filter_table()">
+</div>
+
+<div>
+  <label for="costInput">Koszt:</label>
+  <input type="number" id="costInput" oninput="items_table.filter_table()">
+</div>
+
+<div>
+  <label for="typeInput">Typ:</label>
+  <input type="text" id="typeInput" oninput="items_table.filter_table()">
+</div>
+    </div>
+
+
+    <script src="items_table.js"></script>
+    <script src="items.js"></script>
+</body>
+
+</html>

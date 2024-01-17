@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>--🐉🐉🐉--</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+
+<body>
+    <div id="user_box">
+        <div id="login_box">
+        <h1>Zaloguj się</h1>
+            <input type="text" placeholder="Login/email" id="login">
+            <input type="password" placeholder="Hasło" id="password">
+            <br>
+            <br>
+            <button id="login_button">Zaloguj</button>
+            <button id="switch_menu_login">Załóż konto</button>
+        </div>
+        <div id="register_box" class="hidden">
+        <h1>Zarejestruj się.</h1>
+            <input type="text" placeholder="login" id="r_login">
+            <input type="email" placeholder="Email" id="r_email">
+            <input type="password" placeholder="Hasło" id="r_password">
+            <br>
+            <br>
+            <button id="register_button">Zarejestruj</button>
+            <button id="switch_menu_register">Zaloguj się na istniejące konto</button>
+        </div>
+        <p id="message_box"></p>
+    </div>
+    <iframe src="items.html" frameborder="0" id="items"></iframe>
+    <iframe src="fav_items.html" frameborder="0" id="fav_items"></iframe>
+    <iframe src="character.html" frameborder="0" id="characters"></iframe>
+
+    <script src="app_class.js"></script>
+    <script src="script.js"></script>
+    <script src="login_listeners.js"></script>
+</body>
+
+</html>
